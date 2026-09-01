@@ -301,7 +301,7 @@ def run(limit, only, dry_run, profile_name, extra_urls=None, only_extra=False):
             for name, url in sites:
                 rid = urllib.parse.quote(url, safe="")
                 target = SITE_REPORT_URL.format(rid=rid)
-                log(f"→ {name} ({url)")
+                log(f"→ {name} ({url})")
                 store.clear()
                 resps.clear()
                 try:

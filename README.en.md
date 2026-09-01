@@ -1,6 +1,7 @@
 # GSC Generative AI Report Scraper
 
 > Add a **Generative AI (AI Overviews / AI Mode) Impression report** to any GSC Dashboard.
+> ![Validate](https://github.com/rushsimon/gsc-genai-scraper/actions/workflows/validate.yml/badge.svg)
 > Because Google's public Search Console API **does not expose** this dimension yet, this project
 > uses Playwright to reuse your already-logged-in Chrome session, scrape the GenAI report page for
 > every site, parse the network responses, write the data into `genai_data.json`, and let the

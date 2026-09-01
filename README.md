@@ -1,6 +1,7 @@
 # GSC Generative AI 报告抓取模块
 
 > 📖 English version: [README.en.md](README.en.md)
+> ![Validate](https://github.com/rushsimon/gsc-genai-scraper/actions/workflows/validate.yml/badge.svg)
 
 > 让任意 GSC Dashboard 展示 **Generative AI（AI Overviews / AI Mode）Impression 报告**——
 > 因为 GSC 公开 API 目前**不开放**该维度，本项目用 Playwright 复用你已登录的 Chrome 会话，
