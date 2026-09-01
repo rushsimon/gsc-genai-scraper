@@ -1,0 +1,7 @@
+{
+  "_comment": "最小示例：把你自己的 GSC 站点列表放进来（从 GSC API 或 MCP 导出 site_url 即可）。scrape_genai.py 读取 gsc_sites[].site_url / name。也可完全不提供本文件，直接用 --site-url 补抓。",
+  "gsc_sites": [
+    { "name": "example.com", "site_url": "https://example.com/" },
+    { "name": "example2.com", "site_url": "sc-domain:example2.com" }
+  ]
+}

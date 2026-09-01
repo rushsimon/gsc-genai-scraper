@@ -1,0 +1,14 @@
+<!-- 把这段放进你的 dashboard 模板里 GSC 面板所在区域（renderGsc() 渲染的容器即可）。
+     它需要配合 frontend/renderGscGenAi.js 与 build 脚本注入的 const GENAI。 -->
+<div class="panel" id="gscGenAiPanel">
+  <h2>🤖 Generative AI 流量 <span class="tag" id="gscGenAiTag"></span></h2>
+  <div class="genai-note" id="gscGenAiNote"></div>
+  <div class="kpis" id="gscGenAiKpis" style="margin-bottom:16px"></div>
+  <div style="font-weight:600;font-size:13px;margin-bottom:10px">📈 近 30 天 AI Impression 趋势 <span style="font-weight:400;color:var(--muted);font-size:12px">（按日期 · Impressions）</span></div>
+  <div class="chart-box"><canvas id="gscGenAiTrend"></canvas></div>
+  <div style="font-weight:600;font-size:13px;margin:18px 0 10px">📄 Top 10 AI Impression 页面 <span style="font-weight:400;color:var(--muted);font-size:12px">（Page URL · Impressions）</span></div>
+  <div style="overflow-x:auto"><table id="gscGenAiPageTable">
+    <thead><tr><th>排名 / 页面 URL</th><th class="num">Impressions</th><th class="num">占该视图 AI 展示</th></tr></thead>
+    <tbody id="gscGenAiPageBody"></tbody>
+  </table></div>
+</div>

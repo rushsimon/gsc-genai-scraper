@@ -1,0 +1,19 @@
+# 真实抓取数据（含个人站点信息），勿提交
+genai_data.json
+dashboard_data.json
+*.bak
+*.pre_genai_*
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# 诊断输出
+diag_*.txt
+diag_nDAfwb_body.txt
+
+# 系统
+Thumbs.db
+Desktop.ini
+.DS_Store
