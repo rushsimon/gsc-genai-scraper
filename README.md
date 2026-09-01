@@ -144,6 +144,11 @@ python scrape_genai.py --site-url https://example.com/ --site-url sc-domain:exam
 这套方法已固化为 WorkBuddy 用户级技能 `gsc-genai-scraper`（见 [`skills/gsc-genai-scraper/SKILL.md`](skills/gsc-genai-scraper/SKILL.md)）。
 在 WorkBuddy 里说一句「给看板加 Generative AI 报告」，即可复用整套抓取 + 避坑流程（含 rpcid 解析、App-Bound Encryption、response 回调读 body 竞态等）。
 
+## 贡献
+
+欢迎提 Issue / PR。改动前请先读 **[CONTRIBUTING.md](CONTRIBUTING.md)**（中文）——
+重点：**改完脚本先 `python -m py_compile scrape_genai.py` 跑一遍再推**，仓库的 `Validate` CI 也会自动做这件事。
+
 ## License
 
 MIT —— 见仓库根目录 [`LICENSE`](LICENSE) 文件（随意复用、修改、再发布）。

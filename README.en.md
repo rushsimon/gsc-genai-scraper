@@ -147,6 +147,12 @@ This method is also packaged as a WorkBuddy user-level skill, `gsc-genai-scraper
 "add a Generative AI report to my dashboard" and it reuses the whole scrape + pitfall
 playbook (rpcid parsing, App-Bound Encryption, the response-callback body-read race, etc.).
 
+## Contributing
+
+Issues and PRs are welcome. Before changing anything, please read **[CONTRIBUTING.en.md](CONTRIBUTING.en.md)** —
+the key rule: **run `python -m py_compile scrape_genai.py` after editing, before pushing**. The repo's
+`Validate` CI runs this automatically too.
+
 ## License
 
 MIT — see the [`LICENSE`](LICENSE) file at the repo root (free to reuse, modify, and redistribute).
