@@ -1,5 +1,7 @@
 # GSC Generative AI 报告抓取模块
 
+> 📖 English version: [README.en.md](README.en.md)
+
 > 让任意 GSC Dashboard 展示 **Generative AI（AI Overviews / AI Mode）Impression 报告**——
 > 因为 GSC 公开 API 目前**不开放**该维度，本项目用 Playwright 复用你已登录的 Chrome 会话，
 > 批量抓取每个站点的 GenAI 报告页，解析网络请求拿到数据，写进 `genai_data.json`，再由前端渲染。
@@ -36,8 +38,14 @@ genai-scraper/
 │   ├── panel.html             # 面板 HTML 结构（粘进你的模板）
 │   ├── renderGscGenAi.js      # 渲染函数
 │   └── README.md              # 前端接入步骤
-└── README.md
+├── architecture.svg           # 架构 / 数据流图
+├── README.md                  # 本文件（中文）
+└── README.en.md               # 英文版
 ```
+
+## 架构流程图
+
+![architecture](architecture.svg)
 
 ## 前置条件
 

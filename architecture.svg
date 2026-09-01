@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 720" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
+  <rect width="680" height="720" fill="#f7f8fa"/>
+  <text x="340" y="34" text-anchor="middle" font-size="20" font-weight="700" fill="#1f2937">GSC Generative AI Report — Data Flow</text>
+  <text x="340" y="54" text-anchor="middle" font-size="12" fill="#6b7280">Search Console API does NOT expose this data → scrape the web UI instead</text>
+
+  <!-- Box 1 -->
+  <rect x="60" y="74" width="560" height="66" rx="10" fill="#ffffff" stroke="#3b82f6" stroke-width="2"/>
+  <text x="340" y="104" text-anchor="middle" font-size="15" font-weight="700" fill="#1f2937">GSC Generative AI Report (Beta)</text>
+  <text x="340" y="124" text-anchor="middle" font-size="12" fill="#6b7280">opened in your logged-in Chrome — visible in UI only, no API</text>
+
+  <!-- arrow -->
+  <path d="M340 140 L340 162" stroke="#9ca3af" stroke-width="2" fill="none" marker-end="url(#a)"/>
+
+  <!-- Box 2 -->
+  <rect x="60" y="162" width="560" height="70" rx="10" fill="#ffffff" stroke="#3b82f6" stroke-width="2"/>
+  <text x="340" y="190" text-anchor="middle" font-size="15" font-weight="700" fill="#1f2937">scrape_genai.py · Playwright</text>
+  <text x="340" y="210" text-anchor="middle" font-size="12" fill="#6b7280">reuse Chrome session via temp profile copy · headless · forces "28 days"</text>
+
+  <path d="M340 232 L340 254" stroke="#9ca3af" stroke-width="2" fill="none" marker-end="url(#a)"/>
+
+  <!-- Box 3 -->
+  <rect x="60" y="254" width="560" height="70" rx="10" fill="#ffffff" stroke="#3b82f6" stroke-width="2"/>
+  <text x="340" y="282" text-anchor="middle" font-size="15" font-weight="700" fill="#1f2937">Capture Network (batchexecute)</text>
+  <text x="340" y="302" text-anchor="middle" font-size="12" fill="#6b7280">OLiH4d → 28-day daily trend · nDAfwb → Top 10 pages</text>
+
+  <path d="M340 324 L340 346" stroke="#9ca3af" stroke-width="2" fill="none" marker-end="url(#a)"/>
+
+  <!-- Box 4 -->
+  <rect x="60" y="346" width="560" height="70" rx="10" fill="#ffffff" stroke="#10b981" stroke-width="2"/>
+  <text x="340" y="374" text-anchor="middle" font-size="15" font-weight="700" fill="#1f2937">genai_data.json</text>
+  <text x="340" y="394" text-anchor="middle" font-size="12" fill="#6b7280">standalone file · auto-backup before write · _meta.is_sample = false</text>
+
+  <path d="M340 416 L340 438" stroke="#9ca3af" stroke-width="2" fill="none" marker-end="url(#a)"/>
+
+  <!-- Box 5 -->
+  <rect x="60" y="438" width="560" height="70" rx="10" fill="#ffffff" stroke="#10b981" stroke-width="2"/>
+  <text x="340" y="466" text-anchor="middle" font-size="15" font-weight="700" fill="#1f2937">build_html.py</text>
+  <text x="340" y="486" text-anchor="middle" font-size="12" fill="#6b7280">injects const GENAI at the /*__GENAI__*/ placeholder</text>
+
+  <path d="M340 508 L340 530" stroke="#9ca3af" stroke-width="2" fill="none" marker-end="url(#a)"/>
+
+  <!-- Box 6 -->
+  <rect x="60" y="530" width="560" height="74" rx="10" fill="#eff6ff" stroke="#1d4ed8" stroke-width="2"/>
+  <text x="340" y="560" text-anchor="middle" font-size="15" font-weight="700" fill="#1d4ed8">dashboard.html · 🤖 Generative AI panel</text>
+  <text x="340" y="580" text-anchor="middle" font-size="12" fill="#374151">trend line chart + Top 10 pages table, per site &amp; aggregated</text>
+
+  <!-- notes -->
+  <text x="60" y="640" font-size="11" fill="#9ca3af">Notes: · Chrome must be closed before a run (profile copy lock) · login must be the GSC-owning account</text>
+  <text x="60" y="658" font-size="11" fill="#9ca3af">· browser reaches Google via GENAI_PROXY (default http://127.0.0.1:7897) · bodies read on main thread, never in the response callback</text>
+
+  <defs>
+    <marker id="a" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#9ca3af"/>
+    </marker>
+  </defs>
+</svg>
