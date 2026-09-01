@@ -1,0 +1,38 @@
+name: Validate
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Syntax check (py_compile)
+        run: |
+          python -m py_compile scrape_genai.py
+          echo "scrape_genai.py compiles OK"
+
+      - name: Verify required files exist
+        run: |
+          test -f README.md            && echo "OK  README.md"
+          test -f README.en.md         && echo "OK  README.en.md"
+          test -f LICENSE              && echo "OK  LICENSE"
+          test -f frontend/panel.html  && echo "OK  frontend/panel.html"
+          test -f frontend/renderGscGenAi.js && echo "OK  frontend/renderGscGenAi.js"
+          test -f docs/panel.png       && echo "OK  docs/panel.png"
