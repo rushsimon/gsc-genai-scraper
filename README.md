@@ -24,6 +24,12 @@ Google Search Console 的「Generative AI」报告（AI Overviews / AI Mode 展�
 - 数据写入独立 `genai_data.json`（不依赖主数据管线，刷新不会被覆盖）
 - 写入前自动备份
 
+## 效果展示
+
+![实际面板效果](docs/panel.png)
+
+*真实面板示例（dark theme）：近 30 天 AI Impression 总量 + 单日峰值 + Top 10 页面占比。*
+
 ## 目录结构
 
 ```
@@ -39,6 +45,8 @@ genai-scraper/
 │   ├── renderGscGenAi.js      # 渲染函数
 │   └── README.md              # 前端接入步骤
 ├── architecture.svg           # 架构 / 数据流图
+├── docs/
+│   └── panel.png              # 面板效果预览
 ├── README.md                  # 本文件（中文）
 └── README.en.md               # 英文版
 ```

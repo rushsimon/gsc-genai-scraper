@@ -25,6 +25,12 @@ value. So:
 - Data goes to a standalone `genai_data.json` (independent of the main pipeline, won't be overwritten on refresh)
 - Auto-backup before writing
 
+## Preview
+
+![Actual dashboard panel](docs/panel.png)
+
+*Real panel example (dark theme): last 30-day AI Impression total + daily peak + Top 10 pages.*
+
 ## Directory layout
 
 ```
@@ -40,6 +46,8 @@ genai-scraper/
 │   ├── renderGscGenAi.js      # render function
 │   └── README.md              # frontend integration steps
 ├── architecture.svg           # architecture / data-flow diagram
+├── docs/
+│   └── panel.png              # preview screenshot of the dashboard panel
 ├── README.md                  # Chinese version
 └── README.en.md               # this file
 ```
