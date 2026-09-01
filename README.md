@@ -1,6 +1,8 @@
 # GSC Generative AI 报告抓取模块
 
 > 📖 English version: [README.en.md](README.en.md)
+>
+> [![Validate](https://github.com/rushsimon/gsc-genai-scraper/actions/workflows/validate.yml/badge.svg)](https://github.com/rushsimon/gsc-genai-scraper/actions/workflows/validate.yml)
 
 > 让任意 GSC Dashboard 展示 **Generative AI（AI Overviews / AI Mode）Impression 报告**——
 > 因为 GSC 公开 API 目前**不开放**该维度，本项目用 Playwright 复用你已登录的 Chrome 会话，
@@ -132,4 +134,4 @@ python scrape_genai.py --site-url https://example.com/ --site-url sc-domain:exam
 
 ## License
 
-MIT（随意复用、修改、再发布）。
+MIT —— 见仓库根目录 [`LICENSE`](LICENSE) 文件（随意复用、修改、再发布）。
