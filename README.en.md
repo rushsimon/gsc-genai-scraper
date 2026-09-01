@@ -131,6 +131,13 @@ inject `const GENAI` → paste the panel HTML → call `renderGscGenAi()`.
   **do not commit real scraped data or your personal site list to a public repo**.
 - The script only reads a local copy of your logged-in Chrome profile; it sends nothing to any third party.
 
+## WorkBuddy Skill
+
+This method is also packaged as a WorkBuddy user-level skill, `gsc-genai-scraper` (see
+[`skills/gsc-genai-scraper/SKILL.md`](skills/gsc-genai-scraper/SKILL.md)). Tell WorkBuddy
+"add a Generative AI report to my dashboard" and it reuses the whole scrape + pitfall
+playbook (rpcid parsing, App-Bound Encryption, the response-callback body-read race, etc.).
+
 ## License
 
 MIT — see the [`LICENSE`](LICENSE) file at the repo root (free to reuse, modify, and redistribute).

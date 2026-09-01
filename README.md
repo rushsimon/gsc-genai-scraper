@@ -130,6 +130,11 @@ python scrape_genai.py --site-url https://example.com/ --site-url sc-domain:exam
   **不要把真实抓取数据或个人站点列表提交到公开仓库**。
 - 脚本只读取你本地已登录的 Chrome profile 副本，不向任何第三方发送数据。
 
+## WorkBuddy Skill
+
+这套方法已固化为 WorkBuddy 用户级技能 `gsc-genai-scraper`（见 [`skills/gsc-genai-scraper/SKILL.md`](skills/gsc-genai-scraper/SKILL.md)）。
+在 WorkBuddy 里说一句「给看板加 Generative AI 报告」，即可复用整套抓取 + 避坑流程（含 rpcid 解析、App-Bound Encryption、response 回调读 body 竞态等）。
+
 ## License
 
 MIT —— 见仓库根目录 [`LICENSE`](LICENSE) 文件（随意复用、修改、再发布）。
